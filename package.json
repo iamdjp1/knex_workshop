@@ -1,0 +1,25 @@
+{
+  "name": "knex_workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamdjp1/knex_workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamdjp1/knex_workshop/issues"
+  },
+  "homepage": "https://github.com/iamdjp1/knex_workshop#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "knex": "^3.1.0",
+    "pg": "^8.16.0"
+  }
+}
