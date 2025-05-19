@@ -4,7 +4,8 @@
  */
 exports.up = function(knex) {
   return knex.schema.createTable('card_type', table => {
-    table.increments('id').primary();
+    table.increments('id').primary()
+         .onDelete('CASCADE');
     table.string('type_name').notNullable();
    });
 };
