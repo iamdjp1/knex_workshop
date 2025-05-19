@@ -77,39 +77,3 @@ app.delete('/cards/:id', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
-
-
-// let myKnexQuery = knex("states").select({state_bird:"American Robin"});
-// console.log(myKnexQuery) 
-
-// function getAllStatesWithBird(birdName){ // helper function, returns chain of knex logic
-//   return knex.select()
-//   .from("states")
-//   .where( { state_bird:birdName } );
-// }
-
-// app.get('/states/:birdName', function(req, res) { // GET route
-//   getAllStatesWithBird(req.params.birdName) // returns knex logic, i.e. a Promise
-//     .then(data => res.status(200).json(data)) // can still use .then()
-//     .catch(err => // can alsostill use .catch()
-//       res.status(404).json({
-//         message:
-//           'The state bird data is not available'
-//       })
-//     );
-// });
-
-// knex.select('*').from('states').where({state_bird: "American Robin"});
-// knex.select().from("states").where({state_bird:"American Robin"});
-// knex.select().from('states').where('state_bird','American Robin');
-// knex.select().from("states").where("state_bird","American Robin");
-// knex("states").select({state_bird:"American Robin"});
-// knex('states').select({state_bird:'American Robin'});
-// knex("states").select("state_bird","American Robin");
-// knex('states').select('state_bird','American Robin');
-// knex('states').select().where({state_bird:"American Robin"});
-// knex('states').select("*").where({state_bird:"American Robin"});
-// knex("states").where({state_bird:"American Robin"});
-// knex("states").where("state_bird","American Robin");
-// knex('states').where({state_bird:'American Robin'});
-// knex('states').where('state_bird','American Robin');
